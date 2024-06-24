@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca de Libros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Biblioteca de Libros</h1>
+            <img src="/images/coderhouse.jpg" alt="Imagen del header" class="header-image">
+        </div>
+    </header>
+    <div class="container">
+        <h1>Biblioteca de Libros</h1>
+        <div class="formulario-grupo">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" placeholder="Título del libro">
+        </div>
+        <div class="formulario-grupo">
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" placeholder="Autor del libro">
+        </div>
+        <div class="formulario-grupo">
+            <label for="anio">Año de Publicación:</label>
+            <input type="text" id="anio" placeholder="Año de publicación">
+        </div>
+        <button id="agregarLibroBtn">Agregar Libro</button>
+        <h2>Lista de Libros</h2>
+        <ul id="listaLibros"></ul>
+        <div class="formulario-grupo">
+            <label for="buscar">Buscar Libro:</label>
+            <input type="text" id="buscar" placeholder="Título o Autor">
+        </div>
+        <button id="buscarLibroBtn">Buscar Libro</button>
+        <div id="resultadosBusqueda"></div>
+    </div>
+    <footer>
+        <p>BibliotecaOnline &reg;</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
