@@ -99,8 +99,40 @@ footer {
     background-color: #2e7d32;
     color: white;
     text-align: center;
-    padding: 2px 0;
+    padding: 10px 0;
     position: sticky;
     bottom: 0;
     width: 100%;
+}
+
+.libros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.libro-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.libro-card h3 {
+    margin: 10px 0 5px;
+}
+
+.libro-card p {
+    margin: 5px 0;
+}
+
+.libro-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
